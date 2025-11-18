@@ -1,0 +1,21 @@
+INFO:     Will watch for changes in these directories: ['/home/workspace']
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [154] using StatReload
+INFO:     Started server process [156]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     172.20.0.1:48420 - "HEAD / HTTP/1.1" 405 Method Not Allowed
+INFO:     172.20.0.1:48426 - "GET /api/rates?base=USD&symbols=EUR%2CGBP%2CJPY%2CAUD%2CCAD%2CCHF%2CCNY%2CINR%2CBRL HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:48440 - "GET /api/rates?base=USD&symbols=EUR HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:48466 - "GET /api/rates?base=USD&symbols=EUR%2CGBP%2CJPY%2CAUD%2CCAD%2CCHF%2CCNY%2CINR%2CBRL HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:48474 - "GET /api/rates?base=USD&symbols=EUR HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:48456 - "GET /api/transactions?limit=10 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:48468 - "GET /api/transactions?limit=10 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:55074 - "GET /api/transactions?limit=10 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:55062 - "GET /api/rates?base=USD&symbols=EUR HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:55096 - "GET /api/rates?base=USD&symbols=EUR HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:55052 - "GET /api/rates?base=USD&symbols=EUR%2CGBP%2CJPY%2CAUD%2CCAD%2CCHF%2CCNY%2CINR%2CBRL HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:55104 - "GET /api/transactions?limit=10 HTTP/1.1" 200 OK
+INFO:     172.20.0.1:55084 - "GET /api/rates?base=USD&symbols=EUR%2CGBP%2CJPY%2CAUD%2CCAD%2CCHF%2CCNY%2CINR%2CBRL HTTP/1.1" 502 Bad Gateway
+INFO:     172.20.0.1:55266 - "OPTIONS /api/convert HTTP/1.1" 200 OK
+INFO:     172.20.0.1:55266 - "POST /api/convert HTTP/1.1" 502 Bad Gateway

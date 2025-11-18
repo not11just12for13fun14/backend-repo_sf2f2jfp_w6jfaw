@@ -41,8 +41,13 @@ class Product(BaseModel):
 # Add your own schemas here:
 # --------------------------------------------------
 
-# Note: The Flames database viewer will automatically:
-# 1. Read these schemas from GET /schema endpoint
-# 2. Use them for document validation when creating/editing
-# 3. Handle all database operations (CRUD) directly
-# 4. You don't need to create any database endpoints!
+class Exchange(BaseModel):
+    """
+    Currency exchange transactions
+    Collection name: "exchange"
+    """
+    from_currency: str = Field(..., description="ISO currency code to convert from", min_length=3, max_length=3)
+    to_currency: str = Field(..., description="ISO currency code to convert to", min_length=3, max_length=3)
+    amount: float = Field(..., ge=0, description="Amount in source currency")
+    rate: float = Field(..., ge=0, description="Applied conversion rate (to per from)")
+    result: float = Field(..., ge=0, description="Converted amount in target currency")
